@@ -18,7 +18,7 @@ const Navbar = () => {
     const fetchData = async() => {
       try{
 
-        const response = await axios.get( `http://www.omdbapi.com/?s=${searchQuery}&apikey=${API_KEY}`)
+        const response = await axios.get( `https://www.omdbapi.com/?s=${searchQuery}&apikey=${API_KEY}`)
         
         const res = response.data.Search
         setData(res)
